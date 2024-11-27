@@ -1,0 +1,272 @@
+/* Establece un estilo básico para toda la página */
+html,
+body {
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El header ocupa todo el ancho */
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+#header img {
+  width: 1400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Define la estructura de la página con grid */
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas:
+    /* "encabezado encabezado" */
+    "menu main-content";
+  margin-top: 20px;
+}
+
+/* El menu ocupa la primera columna y se asigna a la zona 'menu' */
+.menu {
+  background-color: #f4f4f4;
+  padding: 0 10px 20px 10px;
+  grid-area: menu;
+}
+
+.logo {
+  padding: 1px;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.menu li {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.menu li:hover a {
+  color: white;
+}
+
+.menu li:hover {
+  color: white;
+  background-color: #ff3385;
+}
+
+.menu h3 {
+  padding: 17px 0;
+  text-align: center;
+  background-color: red;
+}
+
+/* La segunda columna contiene el hero y el main */
+.main-content {
+  grid-area: main-content;
+}
+
+.main {
+  padding: 0 0 20px 20px;
+}
+
+/* Estilo para la sección hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #800000;
+  margin-bottom: -20px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 2rem;
+  color: #52527a;
+}
+
+/* Estilo para la sección main */
+.main {
+  margin-top: 40px;
+}
+
+.main h3 {
+  font-size: 1.5rem;
+  color: #b3b3cc;
+  margin-bottom: 15px;
+}
+
+.main p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.municipio {
+  /* margin-top: 20px; */
+  padding-top: 20px 0;
+}
+
+.img-right {
+  width: 50%;
+  height: auto;
+  float: right;
+  margin: 0 0 30px 20px;
+}
+
+.img-left {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin: 0 20px 20px 0px;
+}
+
+
+.small {
+  width: 30%;
+}
+
+.medium {
+  width: 45%;
+}
+
+.video-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.video-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.tabla {
+  margin: 40px 0;
+}
+
+.tabla table {
+  margin: auto;
+  border-collapse: collapse;
+
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+tr td:nth-child(even) {
+  text-align: right;
+}
+
+.testimonios {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonio {
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5em;
+  /* border: 2px solid black; */
+  width: 25%;
+  /* text-align: center; */
+}
+
+.testimonio p {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  font-size: 1rem;
+  padding: 5px 0rem;
+  position: relative;
+  bottom: 0;
+  color: white;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 10px 0;
+  color: #fff;
+
+}
+
+.contenido .logo img {
+  width: 150px;
+}
+
+.info-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-footer ul {
+  margin: 0 50px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.info-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-footer a:hover {
+  color: #b502bb;
+}
+
+.rrss ul li{
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  margin: 10px;
+}
